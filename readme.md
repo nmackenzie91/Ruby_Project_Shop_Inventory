@@ -17,3 +17,7 @@ Basic Products page to add/remove items
 Basic Manufacturers page to show details and add/remove functionality
 
 
+Basic Planning Diagrams
+
+
+
