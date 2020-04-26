@@ -1,4 +1,4 @@
-E-Commerce Shop Inventory App
+# E-Commerce Shop Inventory App
 
 
 Client is starting up an e-commerce company to sell tartan blankets. 
@@ -11,13 +11,24 @@ Easily identify low level products and OoS products
 Know what products are from what manufacturer and be able to access their their details
 Add/remove products and manufactureres easily
 
-Starting point
+**Starting point**
+
 Inventory to show all information with link to manufacturer for each [to bring up details to contact for further orders]
 Basic Products page to add/remove items
 Basic Manufacturers page to show details and add/remove functionality
 
 
-Basic Planning Diagrams
+**Basic Planning Diagrams**
+
+
+![](Planning_images/Proto%20Persona.png)
+
+![](Planning_images/File%20Structure%20Basic.png)
+
+![](Planning_images/DB%20diagrams%20basic.png)
+
+![](Planning_images/Class%20diagrams%20basic.png)
+
 
 
 
