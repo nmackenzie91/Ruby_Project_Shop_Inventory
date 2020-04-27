@@ -19,6 +19,7 @@ CREATE TABLE manufacturers
     location VARCHAR(255) not null,
     email VARCHAR(255) not null,
     tel INT,
+    product_speciality VARCHAR(255) not null,
     shipping_times VARCHAR(255) not null
 )
 
