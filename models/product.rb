@@ -52,6 +52,18 @@ class Product
     end
 
 
+    def manufacturers()
+        sql = "SELECT "
+        values = [@id]
+        results = SqlRunner.run()
+    end
+
+
+
+
+
+
+
     def self.map_items(product_data)
         return product_data.map { |product| Product.new(product)}
     end
