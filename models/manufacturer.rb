@@ -47,7 +47,7 @@ class Manufacturer
 
 
     def delete()
-        sql "DELETE FROM manufacturers WHERE id = $1"
+        sql = "DELETE FROM manufacturers WHERE id = $1"
         values = [@id]
         SqlRunner.run(sql, values)
     end
