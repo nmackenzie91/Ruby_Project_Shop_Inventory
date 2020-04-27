@@ -36,7 +36,7 @@ class Inventory
         =
         ($1, $2)
         WHERE id = $3"    
-        (product_id, manufacturer_id)
+        values = [@product_id, @manufacturer_id]
         SqlRunner.run(sql, values)
     end
 

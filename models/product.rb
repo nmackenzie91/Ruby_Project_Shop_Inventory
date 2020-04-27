@@ -13,7 +13,7 @@ class Product
         @quantity = options['quantity'].to_i
         @buying_price = options['buying_price'].to_f
         @selling_price = options['selling_price'].to_f
-        @manufacturer_id = options['manufacturing_id'].to_i
+        @manufacturer_id = options['manufacturer_id'].to_i
     end
 
 
@@ -24,23 +24,24 @@ class Product
 
     def save()
         sql = "INSERT INTO products
-        (name, type, quantity, buy_price, selling_price, manufacturing_id)
+        (name, type, quantity, buying_price, selling_price, manufacturer_id)
         VALUES
-        ($1, $2, $3, $4, $5)
+        ($1, $2, $3, $4, $5, $6)
         RETURNING id"
         values = [@name, @type, @quantity, @buying_price, @selling_price, @manufacturer_id]
-        results = SqlRunner.run(sql, values)
-        @id = results.first()['id'].to_i
+        result = SqlRunner.run(sql, values)
+        id = result.first['id']
+        @id = id
     end
 
     def update()
     sql = "UPDATE products
     SET
-    (name, type, quantity, buy_price, selling_price, manufacturing_id)
+    (name, type, quantity, buying_price, selling_price, manufacturer_id)
     =
     ($1, $2, $3, $4, $5, $6)
     WHERE id = $7"
-    values =  [@name, @type, @quantity, @buying_price, @selling_price, @manufacturer_id]
+    values =  [@name, @type, @quantity, @buying_price, @selling_price, @manufacturer_id, @id]
     SqlRunner.run(sql, values)
     end
 

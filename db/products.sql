@@ -1,16 +1,8 @@
 DROP TABLE inventories;
-DROP TABLE manufacturers;
 DROP TABLE products;
+DROP TABLE manufacturers;
 
-CREATE TABLE products
-(
-    id SERIAL primary key,
-    name VARCHAR(255) not null,
-    type VARCHAR(255) not null,
-    quantity INT,
-    buying_price INT,
-    selling_price INT
-);
+
 
 CREATE TABLE manufacturers
 (
@@ -22,6 +14,19 @@ CREATE TABLE manufacturers
     product_speciality VARCHAR(255) not null,
     shipping_times VARCHAR(255) not null
 );
+
+CREATE TABLE products
+(
+    id SERIAL primary key,
+    name VARCHAR(255) not null,
+    type VARCHAR(255) not null,
+    quantity INT,
+    buying_price INT,
+    selling_price INT,
+    manufacturer_id INT REFERENCES manufacturers(id)
+);
+
+
 
 CREATE TABLE inventories
 (
