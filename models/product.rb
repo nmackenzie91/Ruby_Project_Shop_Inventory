@@ -11,8 +11,8 @@ class Product
         @name = options['name']
         @type = options['type']
         @quantity = options['quantity'].to_i
-        @buying_price = options['buying_price'].to_f
-        @selling_price = options['selling_price'].to_f
+        @buying_price = options['buying_price'].to_i
+        @selling_price = options['selling_price'].to_i
         @manufacturer_id = options['manufacturer_id'].to_i
     end
 
