@@ -5,7 +5,7 @@ class Inventory
 
     attr_reader :product_id, :manufacturer_id, :id
 
-    def intilialize( options )
+    def initialize( options )
         @id = options['id'].to_i if options['id']
         @product_id = options['product_id'].to_i
         @manufacturer_id = options['manufacturer_id'].to_i
@@ -15,7 +15,6 @@ class Inventory
 
 
 #CRUD
-#Not sure if I will need all of the basic CRUD
 
     def save()
         sql = "INSERT INTO inventories

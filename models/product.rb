@@ -52,10 +52,11 @@ class Product
     end
 
 
-    def manufacturers()
-        sql = "SELECT "
-        values = [@id]
+    def manufacturer()
+        sql = "SELECT * FROM manufacturers WHERE id = $1"
+        values = [@manufacturer_id]
         results = SqlRunner.run()
+        Manufacturer.new result[0]
     end
 
 

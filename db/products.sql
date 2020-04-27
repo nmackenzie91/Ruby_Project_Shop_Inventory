@@ -26,8 +26,6 @@ CREATE TABLE products
     manufacturer_id INT REFERENCES manufacturers(id) ON DELETE CASCADE
 );
 
-
-
 CREATE TABLE inventories
 (
     id SERIAL primary key,

@@ -200,12 +200,12 @@ product13.save()
 
 #INVENTORY COMBO x 13
 
-# inventory_item1 = Inventory.new({
-#         "product_id" => product1.id,
-#         "manufacturer_id" => manufacturer1.id
-# })
+inventory_item1 = Inventory.new({
+        "product_id" => product1.id,
+        "manufacturer_id" => manufacturer1.id
+})
 
-# inventory_item1.save()
+inventory_item1.save()
 
 
 
