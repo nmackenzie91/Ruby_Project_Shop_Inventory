@@ -21,8 +21,8 @@ CREATE TABLE products
     name VARCHAR(255) not null,
     type VARCHAR(255) not null,
     quantity INT,
-    buying_price INT,
-    selling_price INT,
+    buying_price FLOAT,
+    selling_price FLOAT,
     manufacturer_id INT REFERENCES manufacturers(id)
 );
 
