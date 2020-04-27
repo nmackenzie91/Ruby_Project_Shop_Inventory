@@ -52,7 +52,7 @@ end
 
 
 def self.map_items(inventory_data)
-    return inventory_data.map { |inventory| Manufacturer.new(inventory) }
+    return inventory_data.map { |inventory| Inventory.new(inventory) }
 end
 
 
