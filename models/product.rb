@@ -55,7 +55,7 @@ class Product
     def manufacturer()
         sql = "SELECT * FROM manufacturers WHERE id = $1"
         values = [@manufacturer_id]
-        results = SqlRunner.run()
+        result = SqlRunner.run(sql, values)
         Manufacturer.new result[0]
     end
 

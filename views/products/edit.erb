@@ -1,0 +1,67 @@
+<form method="post" action="/products/<%= @product.id %>">
+  <label for="name-field">First Name:</label>
+  <input
+  type="text"
+  name="name"
+  id="name-field"
+  value="<%= @product.name %>"
+  />
+
+  <label for="type-selection">Type:</label>
+  <select name="type" id="type-selection">
+    <option
+    value="Recycled Wool"
+    <%= "selected" if @product.type == "Recycled Wool" %>
+    >Recycled Wool</option>
+    <option
+    value="Cashmere"
+    <%= "selected" if @product.type == "Cashmere" %>
+    >Cashmere</option>
+        <option
+    value="Lambswool"
+    <%= "selected" if @product.type == "Lambswool" %>
+    >Lambswool</option>
+  </select>
+
+  <label for="quantity-field">Quantity:</label>
+  <input
+  type="number"
+  name="quantity"
+  id="quantity-field"
+  value="<%= @product.quantity() %>"
+  />
+
+
+  <label for="buying-price-field">Buying Price:</label>
+  <input
+  type="number"
+  step="0.01"
+  name="buying_price"
+  id="buying-price-field"
+  value="<%= @product.buying_price %>"
+  />
+
+    <label for="buying-price-field">Selling Price:</label>
+  <input
+  type="number"
+  step="0.01"
+  name="selling_price"
+  id="selling-price-field"
+  value="<%= @product.selling_price %>"
+  />
+
+
+
+<label for="manufacturer-selection">Manufacturer:</label>
+<select name="manufacturer_id" id="manufacturer-selection">
+    <% for manufacturer in @manufacturers  %>
+        <% if @product.manufacturer_id == manufacturer.id %>
+            <option value=<%= manufacturer.id %> selected><%= manufacturer.name %></option>
+        <% else %>
+            <option value=<%= manufacturer.id %>><%= manufacturer.name %></option>   
+        <% end  %>
+    <% end %>
+</select>
+
+  <input type='submit' value="Confirm">
+</form>

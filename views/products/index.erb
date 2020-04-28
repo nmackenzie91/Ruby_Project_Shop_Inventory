@@ -1,9 +1,9 @@
 <h1>Products</h1>
 
 <a href="/products/new">Add New Product</a>
-
-
-<table style="width:60%">
+<br>
+<br>
+<table style="width:70%">
     <tr>
       <th>Name</th>
       <th>Type</th>
@@ -11,6 +11,7 @@
       <th>Cost Price</th>
       <th>Sell Price</th>
       <th>Manufacturer</th>
+      <th>Edit</th>
       <th>Remove</th>
     </tr>
   <% for product in @products %>
@@ -20,9 +21,15 @@
     <td><%= product.quantity %></td>
     <td><%= product.buying_price %></td>
     <td><%= product.selling_price %></td>
-    <td><%= product.manufacturer_id %></td>
+    <td><%= product.manufacturer.name %></td>
+
+<td><form method="get" action="/products/<%= product.id %>/edit">
+  <input type="submit" value="Edit Product"/></form></td>
+    
 <td><form method="post" action="/products/<%= product.id %>/delete">
   <input type="submit" value="Delete Product"/></form></td>
   </tr>
   <% end %>
 </table>
+
+
