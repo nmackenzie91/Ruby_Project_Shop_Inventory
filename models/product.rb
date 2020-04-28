@@ -79,11 +79,20 @@ class Product
     end
 
 
-    def self.find()
-        sql = "SELECT * FIND products WHERE id = $1"
+    # def self.find( )
+    #     sql = "SELECT * FIND products WHERE id = $1"
+    #     values = [id]
+    #     results = SqlRunner.run(sql,values).first
+    #     return Product.new(results)
+    # end
+
+
+    def self.find( id )
+        sql = "SELECT * FROM products WHERE id = $1"
         values = [id]
-        results = SqlRunner.run(sql,values).first
-        return Product.new(results)
+        product = SqlRunner.run( sql, values)
+        result = Product.new(product.first)
+        return result
     end
 
     def self.delete_all()

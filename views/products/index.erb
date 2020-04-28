@@ -11,6 +11,7 @@
       <th>Cost Price</th>
       <th>Sell Price</th>
       <th>Manufacturer</th>
+      <th>Remove</th>
     </tr>
   <% for product in @products %>
   <tr>
@@ -20,6 +21,8 @@
     <td><%= product.buying_price %></td>
     <td><%= product.selling_price %></td>
     <td><%= product.manufacturer_id %></td>
+<td><form method="post" action="/products/<%= product.id %>/delete">
+  <input type="submit" value="Delete Product"/></form></td>
   </tr>
   <% end %>
 </table>
