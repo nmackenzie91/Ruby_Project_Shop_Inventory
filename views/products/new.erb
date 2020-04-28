@@ -1,0 +1,74 @@
+<form method="post" action="/products">
+
+  <label for="name-field">Product Name:</label>
+  <input
+  type="text"
+  name="name"
+  id="name-field"
+  />
+
+  <label for="type-field">Type:</label>
+  <select name="type" id="type-selection">
+    <option value="Recycled Wool">Recycled Wool</option>
+    <option value="Cashmere">Cashmere</option>
+    <option value="Lambswool">Lambswool</option>
+  </select>
+
+
+  <label for="quantity-field">Quantity:</label>
+  <input
+  type="number"
+  name="quantity"
+  id="quantity-field"
+  />
+
+    <label for="buying-price-field">Buying Price:</label>
+  <input
+  type="number"
+  step="0.01"
+  name="buying_price"
+  id="buying-price-field"
+  />
+
+    <label for="selling-price-field">Selling Price:</label>
+  <input
+  type="number"
+  step="0.01"
+  name="selling_price"
+  id="selling-price-field"
+  />
+
+ 
+
+    <label>
+    Manufacturer ID:
+    <select name="manufacturer_id">
+      <% for manufacturer in @manufacturers %>
+      <option value="<%= manufacturer.id %>"><%= manufacturer.name %></option>
+      <% end %>
+    </select>
+  </label>
+
+  <input type="submit" value="Add Product">
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

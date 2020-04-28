@@ -1,0 +1,23 @@
+<h1>Manufacturers</h1>
+
+
+<table style="width:70%">
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Email</th>
+      <th>Telephone</th>
+      <th>Product Speciality</th>
+      <th>Shipping Estimates</th>
+    </tr>
+  <% for manufacturer in @manufacturers %>
+  <tr>
+    <td><%= manufacturer.name %></a></td>
+    <td><%= manufacturer.address %></td>
+    <td><%= manufacturer.email %></td>
+    <td><%= manufacturer.tel %></td>
+    <td><%= manufacturer.product_speciality %></td>
+    <td><%= manufacturer.shipping_times %></td>
+  </tr>
+  <% end %>
+</table>
