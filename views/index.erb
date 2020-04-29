@@ -11,6 +11,7 @@
       <th>Type</th>
       <th>Quantity</th>
       <th>Stock Status</th>
+      <th>Contact Manufacturer</th>
     </tr>
   <% for product in @products %>
   <tr>
@@ -18,6 +19,8 @@
     <td><%= product.type %></td>
     <td><%= product.quantity %></td>
     <td><%= product.stock_level_indicator %></td>
+    <td><a href="/manufacturers">Contact</a></td>
+    
 
   <% end %>
   </table>

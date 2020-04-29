@@ -1,6 +1,8 @@
 body {
-    background-color: rgba(85, 78, 43, 0.836);
-    color: rgba(252, 209, 166, 0.904);
+    background: black url('/images/IMG_2739.JPG');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: rgba(54, 36, 18, 0.904);
     font-size: 14px;
     font-family: "Gill Sans", sans-serif;;
     maring: 40px;
@@ -8,11 +10,13 @@ body {
   a {
     text-decoration: underline, bold;
     font-size: 22px;
-    color: rgba(252, 209, 166, 0.678);
+    color: rgba(54, 36, 18, 0.904);
     cursor:pointer;
   }
 
   table, th, td {
+    background: rgb(174, 203, 240);
+    opacity: 80%;
     border: 1px solid black;
     text-align: center;
   }
@@ -25,3 +29,12 @@ body {
     -webkit-border-radius: 5px;
     border-radius: 5px; 
 }
+
+.form-wrapper {
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+    width: 160px;
+    margin: 0 0 0 0;
+  }
+
