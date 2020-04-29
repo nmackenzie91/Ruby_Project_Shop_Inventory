@@ -62,7 +62,7 @@ class Product
     def stock_level_indicator()
         case @quantity
         when (0..15)
-            "Critical - Contact Manufacturer"
+            "CRITICAL - Contact Manufacturer"
         when
             (16..35)
             "Low"
