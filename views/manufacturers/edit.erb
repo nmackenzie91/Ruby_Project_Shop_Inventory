@@ -1,0 +1,55 @@
+<form method="post" action="/manufacturers/<%= @manufacturer.id %>">
+
+  <label for="name-field">Manufacturer:</label>
+  <input
+  type="text"
+  name="name"
+  id="name-field"
+  value="<%= @manufacturer.name %>"
+  />
+
+<label for="address-field">Address:</label>
+  <input
+  type="text"
+  name="address"
+  id="address-field"
+  value="<%= @manufacturer.address %>"
+  />
+
+
+
+  <label for="email-field">Email:</label>
+  <input
+  type="email"
+  name="email"
+  id="email-field"
+  value="<%= @manufacturer.email %>"
+  />
+
+  <label for="telephone-price-field">Telephone:</label>
+  <input
+  type="tel"
+  name="tel"
+  id="telephone-field"
+  value="<%= @manufacturer.tel %>"
+  />
+
+  <label for="product-speciality-field">Product Speciality:</label>
+  <input
+  type="text"
+  name="product_speciality"
+  id="product-speciality-field"
+  value="<%= @manufacturer.product_speciality %>"
+  />
+
+  <label for="shipping-times-field">Shipping Estimates:</label>
+  <input
+  type="text"
+  name="shipping_times"
+  id="shipping-times-field"
+  value="<%= @manufacturer.shipping_times %>"
+  />
+
+
+  <input type='submit' value="Confirm">
+</form>
