@@ -12,7 +12,10 @@
   value="<%= @product.name %>"
   />
 
+<br><br>
+
   <label for="type-selection">Type:</label>
+  <br>
   <select name="type" id="type-selection">
     <option
     value="Recycled Wool"
@@ -28,6 +31,8 @@
     >Lambswool</option>
   </select>
 
+<br><br>
+
   <label for="quantity-field">Quantity:</label>
   <input
   type="number"
@@ -36,6 +41,7 @@
   value="<%= @product.quantity() %>"
   />
 
+<br><br>
 
   <label for="buying-price-field">Buying Price:</label>
   <input
@@ -46,6 +52,8 @@
   value="<%= @product.buying_price %>"
   />
 
+<br><br>
+
     <label for="buying-price-field">Selling Price:</label>
   <input
   type="number"
@@ -55,6 +63,7 @@
   value="<%= @product.selling_price %>"
   />
 
+<br><br>
 
 
 <label for="manufacturer-selection">Manufacturer:</label>
@@ -67,6 +76,8 @@
         <% end  %>
     <% end %>
 </select>
+
+<br><br>
 
   <input type='submit' value="Confirm">
   </div>
