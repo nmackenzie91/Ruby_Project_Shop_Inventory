@@ -59,7 +59,19 @@ class Product
         Manufacturer.new result[0]
     end
 
-
+    def stock_level_indicator()
+        case @quantity
+        when (0..15)
+            "Critical - Contact Manufacturer"
+        when
+            (16..30)
+            "Low"
+        else
+            if @quantity > 31
+                "High"
+            end
+        end
+    end
 
 
 
