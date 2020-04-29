@@ -64,10 +64,10 @@ class Product
         when (0..15)
             "Critical - Contact Manufacturer"
         when
-            (16..30)
+            (16..35)
             "Low"
         else
-            if @quantity > 31
+            if @quantity > 36
                 "High"
             end
         end

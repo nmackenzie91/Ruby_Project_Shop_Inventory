@@ -12,7 +12,7 @@ class Manufacturer
         @name = options['name']
         @address = options['address']
         @email = options['email']
-        @tel = options['tel'].to_i
+        @tel = options['tel']
         @product_speciality = options['product_speciality']
         @shipping_times = options['shipping_times']
     end

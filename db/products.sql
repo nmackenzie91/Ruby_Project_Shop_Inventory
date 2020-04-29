@@ -10,7 +10,7 @@ CREATE TABLE manufacturers
     name VARCHAR(255) not null,
     address VARCHAR(255) not null,
     email VARCHAR(255) not null,
-    tel INT,
+    tel VARCHAR(45),
     product_speciality VARCHAR(255) not null,
     shipping_times VARCHAR(255) not null
 );
