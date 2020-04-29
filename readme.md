@@ -79,9 +79,9 @@ A page that lists all the necessary information for contacting current manufactu
 
 ### Running Instructions
 
-Once files are cloned and opened, ensure the following:
-You have used the 'createdb' command to create the database in the sql_runner.rb file "tbcoinventory"
-Generate the tables by running 'psql -d tbcoinventory -f products.sql' - the file path will be dependent on where you are running the command from
+Once files are cloned and opened, ensure the following:\
+You have used the 'createdb' command to create the database in the sql_runner.rb file "tbcoinventory"\
+Generate the tables by running 'psql -d tbcoinventory -f products.sql' - the file path will be dependent on where you are running the command from\
 Populate your database by running 'ruby seeds.rb' to seed the db
 
 Once this is complete, you can use the 'ruby master_controller.rb' command and connect to the local host, and be on your merry way! :+1:
