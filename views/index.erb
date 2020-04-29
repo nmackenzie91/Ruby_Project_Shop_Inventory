@@ -1,22 +1,29 @@
 <h1>Welcome</h1>
 
 
+
+
+
 <table style="width:70%">
     <tr>
       <th>Name</th>
       <th>Type</th>
       <th>Quantity</th>
-      <th>Stock Status</th>
+      <th>Cost Price</th>
+      <th>Sell Price</th>
       <th>Manufacturer</th>
+      <th>Edit</th>
+      <th>Remove</th>
     </tr>
+  <% for product in @products %>
+  <tr>
+    <td><%= product.name %></a></td>
+    <td><%= product.type %></td>
+    <td><%= product.quantity %></td>
+    <td><%= product.buying_price %></td>
+    <td><%= product.selling_price %></td>
+    <td><%= product.stock_level_indicator %></td>
+    <td><%= product.manufacturer.name %></td>
 
-<tr>
-<td><%= product.name %></td>
-<td><%= product.address %></td>
-<td><%= product.quantity %></td>
-<td><%= product.stock_level_indicator %></td>
-<td><%= product.manufacturer %></td>
-</tr>
-
-
-
+  <% end %>
+  </table>

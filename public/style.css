@@ -1,0 +1,22 @@
+body {
+    background-color: #FCFCFC;
+    color: #000000;
+    font-size: 1.5em;
+    font-family: Lato, sans-serif;
+    maring: 40px;
+  }
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+  ul {
+    list-style: none;
+  }
+  .list {
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 400px;
+  }
+  li {
+    border-bottom: 0.5px solid #B09E99;
+  }
