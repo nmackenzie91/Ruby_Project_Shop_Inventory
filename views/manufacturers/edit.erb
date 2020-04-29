@@ -1,5 +1,8 @@
-<form method="post" action="/manufacturers/<%= @manufacturer.id %>">
+<h3>Edit a Manufacturer</h3>
 
+
+<form method="post" action="/manufacturers/<%= @manufacturer.id %>">
+<div class="form-wrapper">
   <label for="name-field">Manufacturer:</label>
   <input
   type="text"
@@ -52,4 +55,5 @@
 
 
   <input type='submit' value="Confirm">
+  </div>
 </form>

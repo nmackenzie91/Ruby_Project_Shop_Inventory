@@ -1,5 +1,8 @@
-<form method="post" action="/products">
+<h3>Add a New Product</h3>
 
+
+<form method="post" action="/products">
+<div class="form-wrapper">
   <label for="name-field">Product Name:</label>
   <input
   type="text"
@@ -7,7 +10,9 @@
   id="name-field"
   />
 
-  <label for="type-field">Type:</label>
+<br><br>
+
+  <label for="type-field">Type:</label><br>
   <select name="type" id="type-selection">
     <option value="Recycled Wool">Recycled Wool</option>
     <option value="Cashmere">Cashmere</option>
@@ -15,12 +20,16 @@
   </select>
 
 
+<br><br>
+
   <label for="quantity-field">Quantity:</label>
   <input
   type="number"
   name="quantity"
   id="quantity-field"
   />
+
+<br><br>
 
     <label for="buying-price-field">Buying Price:</label>
   <input
@@ -30,6 +39,8 @@
   id="buying-price-field"
   />
 
+<br><br>
+
     <label for="selling-price-field">Selling Price:</label>
   <input
   type="number"
@@ -38,7 +49,7 @@
   id="selling-price-field"
   />
 
- 
+ <br><br>
 
     <label>
     Manufacturer:
@@ -48,8 +59,9 @@
       <% end %>
     </select>
   </label>
-
+<br><br>
   <input type="submit" value="Add Product">
+  </div>
 </form>
 
 

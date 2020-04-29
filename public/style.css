@@ -2,21 +2,21 @@ body {
     background: black url('/images/IMG_2739.JPG');
     background-size: 100%;
     background-repeat: no-repeat;
-    color: rgba(54, 36, 18, 0.904);
+    color: rgba(54, 18, 51, 0.904);
     font-size: 14px;
     font-family: "Gill Sans", sans-serif;;
     maring: 40px;
   }
   a {
-    text-decoration: underline, bold;
+    text-decoration: none;
     font-size: 22px;
     color: rgba(54, 36, 18, 0.904);
     cursor:pointer;
   }
 
   table, th, td {
-    background: rgb(174, 203, 240);
-    opacity: 80%;
+    background: rgb(195, 217, 245);
+    opacity: 85%;
     border: 1px solid black;
     text-align: center;
   }

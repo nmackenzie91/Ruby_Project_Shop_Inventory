@@ -73,7 +73,10 @@ class Product
         end
     end
 
-
+    def mark_up()
+        markup = @selling_price - @buying_price
+        return markup
+    end
 
 
 
