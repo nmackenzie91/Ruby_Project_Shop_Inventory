@@ -68,11 +68,12 @@ class Manufacturer
     end
 
 
-    def self.find()
-        sql = "SELECT * FIND manufacturers WHERE id = $1"
+    def self.find( id )
+        sql = "SELECT * FROM manufacturers WHERE id = $1"
         values = [id]
-        results = SqlRunner.run(sql, values).first
-        return Manufacturer.new(results)
+        manufacturer = SqlRunner.run(sql, values)
+        result = Manufacturer.new(manufacturer.first)
+        return result
     end
 
     def self.delete_all()
