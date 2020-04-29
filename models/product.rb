@@ -94,13 +94,6 @@ class Product
     end
 
 
-    # def self.find( )
-    #     sql = "SELECT * FIND products WHERE id = $1"
-    #     values = [id]
-    #     results = SqlRunner.run(sql,values).first
-    #     return Product.new(results)
-    # end
-
 
     def self.find( id )
         sql = "SELECT * FROM products WHERE id = $1"
