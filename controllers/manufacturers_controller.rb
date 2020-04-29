@@ -6,7 +6,7 @@ also_reload( '../models/*' )
 
 
 
-get '/manufacturers' do
+  get '/manufacturers' do
     @manufacturers = Manufacturer.all()
     erb ( :"manufacturers/index" )
   end

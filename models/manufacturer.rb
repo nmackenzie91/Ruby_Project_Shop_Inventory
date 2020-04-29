@@ -19,7 +19,6 @@ class Manufacturer
 
 
 #CRUD
-#Manufacturers page will need to be able to pull all necessary data from initialzie as well as updating their info, removing bankrupt companies and adding new ones
 
     def save()
         sql = "INSERT INTO manufacturers

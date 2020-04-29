@@ -1,10 +1,6 @@
 <h2>Welcome Donald</h2>
 <p>Here's a quick look at your stock levels:</p>
 
-
-
-
-
 <table style="width:40%">
     <tr>
       <th>Name</th>
@@ -14,13 +10,13 @@
       <th>Contact Manufacturer</th>
     </tr>
   <% for product in @products %>
-  <tr>
-    <td><%= product.name %></a></td>
-    <td><%= product.type %></td>
-    <td><%= product.quantity %></td>
-    <td><%= product.stock_level_indicator %></td>  
-    <td><a href="/manufacturers">Contact</a></td>
-    
+    <tr>
+      <td><%= product.name %></a></td>
+      <td><%= product.type %></td>
+      <td><%= product.quantity %></td>
+      <td><%= product.stock_level_indicator %></td>  
+      <td><a href="/manufacturers">Contact</a></td>
+    </tr> 
 
   <% end %>
-  </table>
+</table>

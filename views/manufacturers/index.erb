@@ -15,19 +15,19 @@
       <th>Remove</th>
     </tr>
   <% for manufacturer in @manufacturers %>
-  <tr>
-    <td><%= manufacturer.name %></a></td>
-    <td><%= manufacturer.address %></td>
-    <td><%= manufacturer.email %></td>
-    <td><%= manufacturer.tel %></td>
-    <td><%= manufacturer.product_speciality %></td>
-    <td><%= manufacturer.shipping_times %></td>
+    <tr>
+      <td><%= manufacturer.name %></a></td>
+      <td><%= manufacturer.address %></td>
+      <td><%= manufacturer.email %></td>
+      <td><%= manufacturer.tel %></td>
+      <td><%= manufacturer.product_speciality %></td>
+      <td><%= manufacturer.shipping_times %></td>
 
-<td><form method="get" action="/manufacturers/<%= manufacturer.id %>/edit">
-  <input type="submit" value="Edit Details"/></form></td>
+      <td><form method="get" action="/manufacturers/<%= manufacturer.id %>/edit">
+      <input type="submit" value="Edit Details"/></form></td>
 
-<td><form method="post" action="/manufacturers/<%= manufacturer.id %>/delete">
-  <input type="submit" value="Delete Manufacturer"/></form></td>
-  </tr>
+      <td><form method="post" action="/manufacturers/<%= manufacturer.id %>/delete">
+      <input type="submit" value="Delete Manufacturer"/></form></td>
+    </tr>
   <% end %>
 </table>

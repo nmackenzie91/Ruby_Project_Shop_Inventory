@@ -17,23 +17,23 @@
       <th>Remove</th>
     </tr>
   <% for product in @products %>
-  <tr>
-    <td><%= product.name %></a></td>
-    <td><%= product.type %></td>
-    <td><%= product.quantity %></td>
-    <td><%= product.stock_level_indicator %></td>
-    <td><%= product.buying_price %></td>
-    <td><%= product.selling_price %></td>
-    <td><%= product.mark_up %></td>
-    <td><%= product.manufacturer.name %></td>
- 
+    <tr>
+      <td><%= product.name %></a></td>
+      <td><%= product.type %></td>
+      <td><%= product.quantity %></td>
+      <td><%= product.stock_level_indicator %></td>
+      <td><%= product.buying_price %></td>
+      <td><%= product.selling_price %></td>
+      <td><%= product.mark_up %></td>
+      <td><%= product.manufacturer.name %></td>
+  
 
-<td><form method="get" action="/products/<%= product.id %>/edit">
-  <input type="submit" value="Edit Product"/></form></td>
-    
-<td><form method="post" action="/products/<%= product.id %>/delete">
-  <input type="submit" value="Delete Product"/></form></td>
-  </tr>
+      <td><form method="get" action="/products/<%= product.id %>/edit">
+      <input type="submit" value="Edit Product"/></form></td>
+      
+      <td><form method="post" action="/products/<%= product.id %>/delete">
+      <input type="submit" value="Delete Product"/></form></td>
+    </tr>
   <% end %>
 </table>
 
