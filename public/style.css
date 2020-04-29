@@ -1,22 +1,27 @@
 body {
-    background-color: #FCFCFC;
-    color: #000000;
-    font-size: 1.5em;
-    font-family: Lato, sans-serif;
+    background-color: rgba(85, 78, 43, 0.836);
+    color: rgba(252, 209, 166, 0.904);
+    font-size: 14px;
+    font-family: "Gill Sans", sans-serif;;
     maring: 40px;
   }
   a {
-    text-decoration: none;
-    color: #000000;
+    text-decoration: underline, bold;
+    font-size: 22px;
+    color: rgba(252, 209, 166, 0.678);
+    cursor:pointer;
   }
-  ul {
-    list-style: none;
+
+  table, th, td {
+    border: 1px solid black;
+    text-align: center;
   }
-  .list {
-    margin: 0 auto;
-    margin-top: 100px;
-    width: 400px;
-  }
-  li {
-    border-bottom: 0.5px solid #B09E99;
-  }
+
+  input[type=submit] {
+    padding:5px 15px; 
+    background:rgb(204, 204, 204); 
+    border: beige;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
